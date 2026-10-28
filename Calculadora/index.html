@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10091d">
+<title>Calculadora F</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <div class="brand-mark">ƒ</div>
+    <div><p class="eyebrow">FERRAMENTA INTELIGENTE</p><h1>Calculadora <span></span></h1></div>
+    <div class="status"><span></span> Pronta</div>
+  </header>
+  <section class="calculator" aria-label="Calculadora">
+    <div class="display">
+      <div class="display-label">RESULTADO</div>
+      <div id="expression" class="expression" aria-live="polite"></div>
+      <output id="result" class="result" aria-live="polite">0</output>
+    </div>
+    <div class="keys">
+      <button class="key utility" data-action="clear">AC</button>
+      <button class="key utility" data-action="delete" aria-label="Apagar último dígito">⌫</button>
+      <button class="key utility" data-value="%">%</button>
+      <button class="key operator" data-value="÷">÷</button>
+      <button class="key" data-value="7">7</button><button class="key" data-value="8">8</button><button class="key" data-value="9">9</button><button class="key operator" data-value="×">×</button>
+      <button class="key" data-value="4">4</button><button class="key" data-value="5">5</button><button class="key" data-value="6">6</button><button class="key operator" data-value="−">−</button>
+      <button class="key" data-value="1">1</button><button class="key" data-value="2">2</button><button class="key" data-value="3">3</button><button class="key operator" data-value="+">+</button>
+      <button class="key utility" data-action="sign">+/−</button><button class="key" data-value="0">0</button><button class="key" data-value=".">,</button><button class="key equals" data-action="equals">=</button>
+    </div>
+    <p id="message" class="message" role="status"></p>
+  </section>
+  <footer><span>Simples. Rápida.</span><span>HTML · CSS · JavaScript</span></footer>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
